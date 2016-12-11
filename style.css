@@ -74,26 +74,44 @@ button:hover {
 #bookmarked-website {
   font: 800 25px 'Open Sans', sans-serif;
   color: #455A64;
-  /*text-decoration-line: underline;
-  text-decoration-color: #CFD8DC;*/
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 #bookmarked-url {
   font: 400 20px 'Open Sans', sans-serif;
   color: #607D8B;
-  margin-left: 10px;
+  margin-left: 20px;
+  text-decoration: underline;
+  /*NEED TO FIX THIS!! text-decoration-color: #F2F4F4;*/
 }
 #bookmark-buttons {
+  font: 400 15px 'Open Sans', sans-serif;
   border: 0px;
   background-color: white;
   color: #455A64;
+  text-decoration: underline;
+  margin-top: 10px;
+  /*NEED TO FIX THIS!!! text-decoration-color: #F2F4F4;*/
 }
 .read-button {
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 10px;
-
 }
 .delete-button {
   float: right;
   margin-right: 10px;
+}
+#bookmark-buttons:active {
+  border: none;
+  outline: none;
+}
+#bookmark-buttons:focus {
+  border: none;
+  outline: none;
+}
+div {
+  border: 1px solid;
+  width: inherit;
+  margin-left: inherit;
+  border-color: #CFD8DC;
 }
