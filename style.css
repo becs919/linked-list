@@ -30,7 +30,7 @@ padding: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   height:25px;
-  width: 425px;
+  width: 80%;
 }
 .enter-button {
   background-color: #ffc107;
@@ -38,7 +38,7 @@ padding: 5px;
   font: 800 20px 'Open Sans', sans-serif;
   border: 0px;
   height: 37px;
-  width: 437px;
+  width: 82%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -61,6 +61,39 @@ button:hover {
   float: right;
   width: 50%;
   display: inline-block;
-  height: 1000px;
-  text-align: center;
+  height: 100%;
+}
+.bookmark {
+  text-align:left;
+  /*height: 25%;*/
+  width: 90%;
+  border: 2px solid #607D8B;
+  margin: 5%;
+  background-color: white;
+}
+#bookmarked-website {
+  font: 800 25px 'Open Sans', sans-serif;
+  color: #455A64;
+  /*text-decoration-line: underline;
+  text-decoration-color: #CFD8DC;*/
+  margin-left: 10px;
+}
+#bookmarked-url {
+  font: 400 20px 'Open Sans', sans-serif;
+  color: #607D8B;
+  margin-left: 10px;
+}
+#bookmark-buttons {
+  border: 0px;
+  background-color: white;
+  color: #455A64;
+}
+.read-button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+.delete-button {
+  float: right;
+  margin-right: 10px;
 }
