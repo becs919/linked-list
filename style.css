@@ -1,18 +1,22 @@
 body {
-  /*margin: 0px;*/
-  background-color: #455A64;
   font-family: 'Open Sans', sans-serif;
 }
+.left-side {
+  float: left;
+  width: 50%;
+  background-color: #455A64;
+  height:800px;
+  text-align: center;
+}
+
 /*LEFT SIDE*/
 form {
   margin-top: 200px;
   color: white;
-  width: 50%;
   display: inline-block;
-  text-align: center;
 }
 h1 {
-  font:800 75px 'Open Sans', sans-serif;
+  font: 800 500% 'Open Sans', sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -20,17 +24,15 @@ img {
   height: 45px;
 }
 input {
-font: 400 20px 'Open Sans', sans-serif;
-border-color: #cfd8dc;
-border-width: 1px;
-border-style: solid;
-padding: 5px;
-}
-#input-fields {
-  margin-top: 20px;
-  margin-bottom: 20px;
   height:25px;
-  width: 80%;
+  width: 95%;
+  font: 400 20px 'Open Sans', sans-serif;
+  border-color: #cfd8dc;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  display: block;
+  margin: 40px auto;
 }
 .enter-button {
   background-color: #ffc107;
@@ -38,8 +40,7 @@ padding: 5px;
   font: 800 20px 'Open Sans', sans-serif;
   border: 0px;
   height: 37px;
-  width: 82%;
-  margin-top: 20px;
+  width: 97%;
   margin-bottom: 20px;
 }
 input:focus {
