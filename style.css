@@ -67,7 +67,7 @@ button:hover {
   display: inline-block;
   height:800px;
 }
-.bookmark {
+#bookmark {
   text-align:left;
   /*height: 25%;*/
   width: 90%;
