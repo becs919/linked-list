@@ -1,0 +1,124 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.left-side {
+  float: left;
+  width: 50%;
+  background-color: #455A64;
+  height:800px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*LEFT SIDE*/
+form {
+  width: 90%;
+  color: white;
+  display: inline-block;
+}
+h1 {
+  font: 800 80px 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  margin-top: 200px;
+}
+img {
+  height: 45px;
+}
+input {
+  height:25px;
+  width: 95%;
+  font: 400 20px 'Open Sans', sans-serif;
+  border-color: #cfd8dc;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  display: block;
+  margin: 40px auto;
+}
+.enter-button {
+  background-color: #ffc107;
+  color: white;
+  font: 800 20px 'Open Sans', sans-serif;
+  border: 0px;
+  height: 37px;
+  width: 97%;
+  margin-bottom: 20px;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0;
+}
+button:active {
+  border: none;
+  outline: none;
+}
+button:hover {
+  background-color: #ffd773;
+  border: none;
+  outline: none;
+}
+/*RIGHT SIDE*/
+.right-side {
+  background-color: #cfd8dc;
+  float: right;
+  width: 50%;
+  display: inline-block;
+  height:800px;
+}
+.bookmark {
+  text-align:left;
+  /*height: 25%;*/
+  width: 90%;
+  /*border: 2px solid #607D8B;*/
+  margin: 5%;
+  background-color: white;
+}
+#bookmarked-website {
+  font: 800 25px 'Open Sans', sans-serif;
+  color: #455A64;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+#bookmarked-url {
+  font: 400 20px 'Open Sans', sans-serif;
+  color: #607D8B;
+  margin-left: 20px;
+  text-decoration: underline;
+  /*NEED TO FIX THIS!! text-decoration-color: #F2F4F4;*/
+}
+#bookmark-buttons {
+  font: 400 15px 'Open Sans', sans-serif;
+  border: 0px;
+  background-color: white;
+  color: #455A64;
+  text-decoration: underline;
+  margin-top: 10px;
+  /*NEED TO FIX THIS!!! text-decoration-color: #F2F4F4;*/
+}
+.read-button {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.delete-button {
+  float: right;
+  margin-right: 10px;
+}
+#bookmark-buttons:active {
+  border: none;
+  outline: none;
+}
+#bookmark-buttons:focus {
+  border: none;
+  outline: none;
+}
+div {
+  border: 1px solid;
+  width: inherit;
+  margin-left: inherit;
+  border-color: #CFD8DC;
+}
+
+/*NEED TO ADD IN HOVER STATES FOR URL AND BUTTONS*/
+/*NEED TO ADD IN READ STATES FOR RIGHT SIDE*/
