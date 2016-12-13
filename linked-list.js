@@ -1,5 +1,5 @@
-$('.enter-button').on('click', function(){
+$('.enter-button').on('click', function() {
   $('#bookmarked-website').text($('.website-title-input').val());
   $('#bookmarked-url').text($('.website-url-input').val());
-  // $( "#bookmark" ).clone().appendTo( "#bookmark" );
+  $( "#bookmark").clone().appendTo( ".right-side" );
 });
