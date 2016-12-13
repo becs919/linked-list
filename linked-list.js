@@ -4,7 +4,7 @@ $('.enter-button').on('click', function() {
   $( ".right-side").append(`<section id="bookmark">
     <p id="bookmarked-website">${$websiteTitle}</p>
     <div></div>
-    <p id="bookmarked-url">${$websiteUrl}</p>
+    <a href="${$websiteUrl}" target="_blank" id='bookmarked-url'>${$websiteUrl}</a>
     <div></div>
     <button id="read-button" class="bookmark-buttons">Read</button>
     <button id="delete-button"class="bookmark-buttons">Delete</button>
