@@ -99,7 +99,7 @@ input:focus {
 .bookmark-buttons {
   font: 400 15px 'Open Sans', sans-serif;
   border: 0px;
-  background-color: white;
+  background-color: inherit;;
   color: #607D8B;
   text-decoration: none;
   margin-top: 10px;
@@ -136,6 +136,7 @@ div {
   border-color: #CFD8DC;
   margin-top: 10px;
 }
-
-/*NEED TO ADD IN HOVER STATES FOR URL AND BUTTONS*/
-/*NEED TO ADD IN READ STATES FOR RIGHT SIDE*/
+/*CLASS READ*/
+.read {
+  background-color: #F2F4F4 !important;
+}
