@@ -92,7 +92,7 @@ button:hover {
   text-decoration: underline;
   /*NEED TO FIX THIS!! text-decoration-color: #F2F4F4;*/
 }
-#bookmark-buttons {
+.bookmark-buttons {
   font: 400 15px 'Open Sans', sans-serif;
   border: 0px;
   background-color: white;
@@ -101,19 +101,19 @@ button:hover {
   margin-top: 10px;
   /*NEED TO FIX THIS!!! text-decoration-color: #F2F4F4;*/
 }
-.read-button {
+#read-button {
   margin-left: 15px;
   margin-bottom: 10px;
 }
-.delete-button {
+#delete-button {
   float: right;
   margin-right: 10px;
 }
-#bookmark-buttons:active {
+.bookmark-buttons:active {
   border: none;
   outline: none;
 }
-#bookmark-buttons:focus {
+.bookmark-buttons:focus {
   border: none;
   outline: none;
 }
