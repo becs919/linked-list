@@ -54,6 +54,10 @@ button:active {
   border: none !important;
   outline: none;
 }
+button:focus {
+  border: none !important;
+  outline: none;
+}
 button:hover {
   background-color: #ffd773;
   border: none;
@@ -71,7 +75,7 @@ button:hover {
   text-align:left;
   /*height: 25%;*/
   width: 90%;
-  /*border: 2px solid #607D8B;*/
+  border: 2px solid #607D8B;
   margin: 5%;
   background-color: white;
 }
