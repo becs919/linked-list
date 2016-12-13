@@ -5,7 +5,7 @@ body {
   float: left;
   width: 50%;
   background-color: #455A64;
-  height:800px;
+  height:2000px;
   text-align: center;
   justify-content: center;
 }
@@ -43,7 +43,7 @@ input {
   font: 800 20px 'Open Sans', sans-serif;
   border: 0px;
   height: 37px;
-  width: 97%;
+  width: 90%;
   margin-bottom: 20px;
 }
 input:focus {
@@ -51,7 +51,11 @@ input:focus {
   box-shadow: 0;
 }
 button:active {
-  border: none;
+  border: none !important;
+  outline: none;
+}
+button:focus {
+  border: none !important;
   outline: none;
 }
 button:hover {
@@ -65,13 +69,13 @@ button:hover {
   float: right;
   width: 50%;
   display: inline-block;
-  height:800px;
+  height: 2000px;
 }
-.bookmark {
+#bookmark {
   text-align:left;
   /*height: 25%;*/
   width: 90%;
-  /*border: 2px solid #607D8B;*/
+  border: 2px solid #607D8B;
   margin: 5%;
   background-color: white;
 }
