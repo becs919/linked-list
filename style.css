@@ -88,25 +88,31 @@ input:focus {
   font: 400 20px 'Open Sans', sans-serif;
   color: #607D8B;
   margin-left: 20px;
-  text-decoration: underline;
-  /*NEED TO FIX THIS!! text-decoration-color: #F2F4F4;*/
+  text-decoration: none;
+  border-bottom: 3px solid #F2F4F4;
+}
+#bookmarked-url:hover {
+  color: #455A64;
+  font: 800 20px 'Open Sans', sans-serif;
+  border-bottom-color: #FFC107;
 }
 .bookmark-buttons {
   font: 400 15px 'Open Sans', sans-serif;
   border: 0px;
   background-color: white;
-  color: #455A64;
-  text-decoration: underline;
+  color: #607D8B;
+  text-decoration: none;
   margin-top: 10px;
-  /*NEED TO FIX THIS!!! text-decoration-color: #F2F4F4;*/
 }
 #read-button {
   margin-left: 15px;
   margin-bottom: 10px;
+  border-bottom: 3px solid #F2F4F4;
 }
 #delete-button {
   float: right;
   margin-right: 10px;
+  border-bottom: 3px solid #F2F4F4;
 }
 .bookmark-buttons:active {
   border: none;
@@ -116,11 +122,19 @@ input:focus {
   border: none;
   outline: none;
 }
+.bookmark-buttons:hover {
+  color: #455A64;
+  font: 800 15px 'Open Sans', sans-serif;
+  border-bottom: 3px solid #FFC107 !important;
+  border: none;
+  outline: none;
+}
 div {
   border: 1px solid;
   width: inherit;
   margin-left: inherit;
   border-color: #CFD8DC;
+  margin-top: 10px;
 }
 
 /*NEED TO ADD IN HOVER STATES FOR URL AND BUTTONS*/
