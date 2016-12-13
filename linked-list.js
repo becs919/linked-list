@@ -27,3 +27,8 @@ $('.right-side').on('click','#read-button', function () {
 $(this).closest('section').toggleClass('read');
 console.log('mark as read');
 });
+
+$('.right-side').on('click', '#delete-button', function (){
+  $(this).closest('section').remove();
+  console.log('remove section');
+});
