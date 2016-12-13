@@ -50,15 +50,15 @@ input:focus {
   outline: none !important;
   box-shadow: 0;
 }
-button:active {
+.enter-button:active {
   border: none !important;
   outline: none;
 }
-button:focus {
+.enter-button:focus {
   border: none !important;
   outline: none;
 }
-button:hover {
+.enter-button:hover {
   background-color: #ffd773;
   border: none;
   outline: none;
