@@ -30,3 +30,12 @@ $('.right-side').on('click','#read-button', function () {
 $('.right-side').on('click', '#delete-button', function (){
   $(this).closest('section').remove();
 });
+
+$('.clear-button').on('click', function(){
+  $('.read').remove();
+});
+
+$('.website-url-input , .website-title-input').keyup(function(){
+  $('.enter-button').prop("disabled", false);
+  console.log('heyyy');
+});
