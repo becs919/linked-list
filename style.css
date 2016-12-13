@@ -5,7 +5,7 @@ body {
   float: left;
   width: 50%;
   background-color: #455A64;
-  height:800px;
+  height:2000px;
   text-align: center;
   justify-content: center;
 }
@@ -43,18 +43,22 @@ input {
   font: 800 20px 'Open Sans', sans-serif;
   border: 0px;
   height: 37px;
-  width: 97%;
+  width: 90%;
   margin-bottom: 20px;
 }
 input:focus {
   outline: none !important;
   box-shadow: 0;
 }
-button:active {
-  border: none;
+.enter-button:active {
+  border: none !important;
   outline: none;
 }
-button:hover {
+.enter-button:focus {
+  border: none !important;
+  outline: none;
+}
+.enter-button:hover {
   background-color: #ffd773;
   border: none;
   outline: none;
@@ -65,13 +69,13 @@ button:hover {
   float: right;
   width: 50%;
   display: inline-block;
-  height:800px;
+  height: 2000px;
 }
-.bookmark {
+#bookmark {
   text-align:left;
   /*height: 25%;*/
   width: 90%;
-  /*border: 2px solid #607D8B;*/
+  border: 2px solid #607D8B;
   margin: 5%;
   background-color: white;
 }
@@ -88,7 +92,7 @@ button:hover {
   text-decoration: underline;
   /*NEED TO FIX THIS!! text-decoration-color: #F2F4F4;*/
 }
-#bookmark-buttons {
+.bookmark-buttons {
   font: 400 15px 'Open Sans', sans-serif;
   border: 0px;
   background-color: white;
@@ -97,19 +101,19 @@ button:hover {
   margin-top: 10px;
   /*NEED TO FIX THIS!!! text-decoration-color: #F2F4F4;*/
 }
-.read-button {
+#read-button {
   margin-left: 15px;
   margin-bottom: 10px;
 }
-.delete-button {
+#delete-button {
   float: right;
   margin-right: 10px;
 }
-#bookmark-buttons:active {
+.bookmark-buttons:active {
   border: none;
   outline: none;
 }
-#bookmark-buttons:focus {
+.bookmark-buttons:focus {
   border: none;
   outline: none;
 }
