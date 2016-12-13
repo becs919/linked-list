@@ -45,6 +45,15 @@ input {
   width: 90%;
   margin-bottom: 20px;
 }
+.clear-button {
+  background-color: #ffc107;
+  color: white;
+  font: 800 20px 'Open Sans', sans-serif;
+  border: 0px;
+  height: 37px;
+  width: 90%;
+  margin-top: 20px;
+}
 input:focus {
   outline: none !important;
   box-shadow: 0;
@@ -58,6 +67,19 @@ input:focus {
   outline: none;
 }
 .enter-button:hover {
+  background-color: #ffd773;
+  border: none;
+  outline: none;
+}
+.clear-button-button:active {
+  border: none !important;
+  outline: none;
+}
+.clear-button:focus {
+  border: none !important;
+  outline: none;
+}
+.clear-button:hover {
   background-color: #ffd773;
   border: none;
   outline: none;
