@@ -1,5 +1,3 @@
-
-
 $('.enter-button').on('click', function() {
 requireInput();
 clearFields();
@@ -8,6 +6,11 @@ clearFields();
 function appendRightSide() {
 var $websiteTitle = $('.website-title-input').val();
 var $websiteUrl = $('.website-url-input').val();
+var $isValid = validateUrl($websiteUrl);
+if(!$isValid) {
+  alert("Your URL is not valid. Try something like http://www.exampleurl.com");
+  return;
+}
 $( ".right-side").append(`<section class="bookmark">
   <p id="bookmarked-website">${$websiteTitle}</p>
   <div></div>
@@ -18,8 +21,6 @@ $( ".right-side").append(`<section class="bookmark">
   </section>`);
 updateSectionCounter();
 };
-
-
 
 
 $('.right-side').on('click','#read-button', function (e) {
@@ -71,7 +72,7 @@ appendRightSide();
 };
 
 
-// function validateUrl($websiteUrl) {
-// var urlRegex = /^(http|https)?:\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,4}/
-// return urlRegex.test($websiteUrl);
-// }
+function validateUrl($websiteUrl) {
+var urlRegex = /^(http|https)?:\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,4}/
+return urlRegex.test($websiteUrl);
+}
