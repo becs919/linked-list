@@ -92,7 +92,7 @@ input:focus {
   display: inline-block;
   height: 2000px;
 }
-#bookmark {
+.bookmark {
   text-align:left;
   /*height: 25%;*/
   width: 90%;

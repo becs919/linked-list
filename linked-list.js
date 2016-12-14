@@ -7,7 +7,7 @@ if(!$isValid) {
   return;
  }
 
-$( ".right-side").append(`<section id="bookmark">
+$( ".right-side").append(`<section class="bookmark">
   <p id="bookmarked-website">${$websiteTitle}</p>
   <div></div>
   <a href="${$websiteUrl}" target="_blank" id='bookmarked-url'>${$websiteUrl}</a>
@@ -48,10 +48,17 @@ $('.website-url-input , .website-title-input').keyup(function(){
 
 
 function updateSectionCounter() {
-  var bookmarkNum = $('.bookmarked-website').length;
+  var bookmarkNum = $('.bookmark').length;
   var readNum = $('.read').length;
   var unreadBookmarks = bookmarkNum - readNum;
   $('.bookmark-counter').text(bookmarkNum);
   $('.read-counter').text(readNum);
   $('.unread-counter').text(unreadBookmarks);
 }
+
+// function RequireInput() {
+// if($('.website-title-input').val() === ""|| $('.website-url-input').val() === "")
+//     alert("ERROR: Both fields are required");
+//     console.log('HIIIIII');
+//     return;
+// };
