@@ -92,7 +92,7 @@ input:focus {
   display: inline-block;
   height: 2000px;
 }
-#bookmark {
+.bookmark {
   text-align:left;
   /*height: 25%;*/
   width: 90%;
@@ -157,6 +157,11 @@ div {
   margin-left: inherit;
   border-color: #CFD8DC;
   margin-top: 10px;
+}
+p {
+  margin-top: 20px;
+  color: white;
+  font: 400 15px 'Open Sans', sans-serif;
 }
 /*CLASS READ*/
 .read {
