@@ -158,6 +158,11 @@ div {
   border-color: #CFD8DC;
   margin-top: 10px;
 }
+p {
+  margin-top: 20px;
+  color: white;
+  font: 400 15px 'Open Sans', sans-serif;
+}
 /*CLASS READ*/
 .read {
   background-color: #F2F4F4 !important;
