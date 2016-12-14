@@ -141,7 +141,7 @@ div {
 .bookmark-buttons {
   margin-top: 10px;
   border: 0px;
-  background-color: white;
+  background-color: inherit;
   text-decoration: none;
   font: 400 15px 'Open Sans', sans-serif;
   color: #607D8B;
@@ -169,7 +169,7 @@ div {
 }
 
 .read {
-  background-color: #F2F4F4;
+  background-color: #F2F4F4 !important;
 }
 
 /*Media Queries for responsive design*/
