@@ -1,12 +1,16 @@
-$('.enter-button').on('click', function() {
- var $websiteTitle = $('.website-title-input').val();
- var $websiteUrl = $('.website-url-input').val();
- var $isValid = validateUrl($websiteUrl);
-if(!$isValid) {
-  alert("ERROR: Your URL is not valid try a formate like: http://www.exampleurl.com");
-  return;
- }
+var $websiteTitle = $('.website-title-input').val();
+var $websiteUrl = $('.website-url-input').val();
+var $isValid = validateUrl($websiteUrl);
 
+$('.enter-button').on('click', function() {
+requireInput();
+updateSectionCounter();
+clearFields();
+});
+
+
+
+function appendRightSide() {
 $( ".right-side").append(`<section class="bookmark">
   <p id="bookmarked-website">${$websiteTitle}</p>
   <div></div>
@@ -15,15 +19,14 @@ $( ".right-side").append(`<section class="bookmark">
   <button id="read-button" class="bookmark-buttons">Read</button>
   <button id="delete-button" class="bookmark-buttons">Delete</button>
   </section>`);
-
 updateSectionCounter();
+}
+
 
 function validateUrl($websiteUrl) {
 var urlRegex = /^(http|https)?:\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,4}/
 return urlRegex.test($websiteUrl);
 }
-});
-
 
 
 $('.right-side').on('click','#read-button', function () {
@@ -47,6 +50,12 @@ $('.website-url-input , .website-title-input').keyup(function(){
 });
 
 
+function clearFields() {
+  $('.website-title-input').val('');
+  $('.website-url-input').val('');
+};
+
+
 function updateSectionCounter() {
   var bookmarkNum = $('.bookmark').length;
   var readNum = $('.read').length;
@@ -56,9 +65,14 @@ function updateSectionCounter() {
   $('.unread-counter').text(unreadBookmarks);
 }
 
-// function RequireInput() {
-// if($('.website-title-input').val() === ""|| $('.website-url-input').val() === "")
-//     alert("ERROR: Both fields are required");
-//     console.log('HIIIIII');
-//     return;
-// };
+function requireInput() {
+if($('.website-title-input').val() === ""|| $('.website-url-input').val() === ""){
+    alert("ERROR: Both fields are required");
+    validateUrl($websiteUrl);
+    console.log('HIIIIII');
+} else if(!$isValid) {
+  alert("ERROR: Your URL is not valid try a formate like: http://www.exampleurl.com");
+} else {
+  appendRightSide();
+};
+};
