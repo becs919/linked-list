@@ -43,6 +43,7 @@ $('.website-url-input , .website-title-input').keyup(function(){
 });
 
 
+
 function updateSectionCounter() {
   var bookmarkNum = $('.bookmark').length;
   var readNum = $('.read').length;
