@@ -1,22 +1,27 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-.left-side {
-  float: left;
-  width: 50%;
-  background-color: #455A64;
-  height:2000px;
-  text-align: center;
-  justify-content: center;
+
+.main {
+  display:flex;
+  flex-direction: column;
 }
+
+.left-side {
+  height:100vh;
+  flex:1;
+  background-color: #455A64;
+  text-align: center;
+}
+
 /*LEFT SIDE*/
 form {
   width: 90%;
-  color: white;
   display: inline-block;
 }
 h1 {
-  font: 800 80px 'Open Sans', sans-serif;
+  font-size: 3.85em;
+  font-weight: 800;
   margin-top: 10px;
   margin-bottom: 10px;
   color: white;
@@ -26,7 +31,7 @@ img {
   height: 45px;
 }
 input {
-  height:25px;
+  /*height:25px;*/
   width: 95%;
   font: 400 20px 'Open Sans', sans-serif;
   border-color: #cfd8dc;
@@ -43,8 +48,9 @@ input {
   border: 0px;
   height: 37px;
   width: 90%;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
+
 .clear-button {
   background-color: #ffc107;
   color: white;
@@ -54,6 +60,7 @@ input {
   width: 90%;
   margin-top: 20px;
 }
+
 input:focus {
   outline: none !important;
   box-shadow: 0;
@@ -71,26 +78,13 @@ input:focus {
   border: none;
   outline: none;
 }
-.clear-button-button:active {
-  border: none !important;
-  outline: none;
-}
-.clear-button:focus {
-  border: none !important;
-  outline: none;
-}
-.clear-button:hover {
-  background-color: #ffd773;
-  border: none;
-  outline: none;
-}
 /*RIGHT SIDE*/
 .right-side {
+  height:100vh;
+  flex:1;
   background-color: #cfd8dc;
   float: right;
-  width: 50%;
-  display: inline-block;
-  height: 2000px;
+  /*display: inline-block;*/
 }
 .bookmark {
   text-align:left;
@@ -121,7 +115,7 @@ input:focus {
 .bookmark-buttons {
   font: 400 15px 'Open Sans', sans-serif;
   border: 0px;
-  background-color: inherit;;
+  background-color: white;
   color: #607D8B;
   text-decoration: none;
   margin-top: 10px;
@@ -158,6 +152,7 @@ div {
   border-color: #CFD8DC;
   margin-top: 10px;
 }
+
 p {
   margin-top: 20px;
   color: white;
@@ -166,4 +161,24 @@ p {
 /*CLASS READ*/
 .read {
   background-color: #F2F4F4 !important;
+}
+
+/*Media Queries for responsive design*/
+@media (max-width: 700px) {
+  .main {
+    min-width: 33.33%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    min-width: 50%;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .main {
+    flex-direction: row;
+  }
 }
