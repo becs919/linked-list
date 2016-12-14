@@ -22,8 +22,9 @@ updateSectionCounter();
 
 
 
-$('.right-side').on('click','#read-button', function () {
+$('.right-side').on('click','#read-button', function (e) {
   $(this).closest('section').toggleClass('read');
+  $(e.target).toggleClass('read-button-clicked')
   updateSectionCounter();
 });
 
